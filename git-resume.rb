@@ -5,21 +5,21 @@
 class GitResume < Formula
   desc "CLI to summarize git commits using AI"
   homepage "https://github.com/guilhermezuriel/git-resume"
-  version "4.0.0"
+  version "4.1.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/guilhermezuriel/git-resume/releases/download/v4.0.0/git-resume_darwin_amd64.tar.gz"
-      sha256 "ae016acb50e29b9b89320e5b56b3ab10a850008844d1844bbf6556c30d29ea2a"
+      url "https://github.com/guilhermezuriel/git-resume/releases/download/v4.1.0/git-resume_darwin_amd64.tar.gz"
+      sha256 "c7ceaebc217d581e5bc5a33aa4f7032782e622cb3551f246f150958a9232e608"
 
       define_method(:install) do
         bin.install "git-resume"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/guilhermezuriel/git-resume/releases/download/v4.0.0/git-resume_darwin_arm64.tar.gz"
-      sha256 "4b1f2ba414c979436ea1bf283033c5bbc3e98e23a33b68cbeb7d2c831887d9be"
+      url "https://github.com/guilhermezuriel/git-resume/releases/download/v4.1.0/git-resume_darwin_arm64.tar.gz"
+      sha256 "ad863c1a032912d33c4056ab47fbb28a7c2cc9eb7a774ce5209e30c0ae2918a3"
 
       define_method(:install) do
         bin.install "git-resume"
@@ -29,15 +29,15 @@ class GitResume < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/guilhermezuriel/git-resume/releases/download/v4.0.0/git-resume_linux_amd64.tar.gz"
-      sha256 "eca7536d9ba051a9161449fafbcbbbf4648c833e67bc18fab079d2b9ddb1a6e6"
+      url "https://github.com/guilhermezuriel/git-resume/releases/download/v4.1.0/git-resume_linux_amd64.tar.gz"
+      sha256 "ec12b4bf5977f63d9c660b3e3a1973c0e743e60a3abba936361c9534a6fc8902"
       define_method(:install) do
         bin.install "git-resume"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/guilhermezuriel/git-resume/releases/download/v4.0.0/git-resume_linux_arm64.tar.gz"
-      sha256 "99490f4bff00a030738a616d19fa5ea8d90cbd3d3946db15606adc2601769f71"
+      url "https://github.com/guilhermezuriel/git-resume/releases/download/v4.1.0/git-resume_linux_arm64.tar.gz"
+      sha256 "a269acce13d9cc44b16eb76ed4a39c03155897f7ddd71e15803f8b0b22cc7591"
       define_method(:install) do
         bin.install "git-resume"
       end
